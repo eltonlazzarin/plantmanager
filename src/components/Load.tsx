@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-
   animation: {
     backgroundColor: "transparent",
     width: 200,
