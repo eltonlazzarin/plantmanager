@@ -1,8 +1,8 @@
 import React from "react";
 import {
+  StyleSheet,
   Text,
   TouchableOpacity,
-  StyleSheet,
   TouchableOpacityProps,
 } from "react-native";
 
@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-
   text: {
     fontSize: 16,
     color: colors.white,
