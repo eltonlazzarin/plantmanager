@@ -35,16 +35,13 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     marginHorizontal: 5,
   },
-
   containerActive: {
     backgroundColor: colors.green_light,
   },
-
   text: {
     color: colors.heading,
     fontFamily: fonts.text,
   },
-
   textActive: {
     fontFamily: fonts.heading,
     color: colors.green_dark,
