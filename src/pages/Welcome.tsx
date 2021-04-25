@@ -1,12 +1,12 @@
 import React from "react";
 import {
-  SafeAreaView,
-  View,
   Text,
+  SafeAreaView,
   Image,
-  TouchableOpacity,
   StyleSheet,
+  TouchableOpacity,
   Dimensions,
+  View,
 } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/core";
@@ -26,7 +26,9 @@ export function Welcome() {
     <SafeAreaView style={styles.container}>
       <View style={styles.wrapper}>
         <Text style={styles.title}>
-          Gerencie {"\n"} suas plantas de {"\n"} forma fácil
+          Gerencie {"\n"}
+          suas plantas de {"\n"}
+          forma fácil
         </Text>
 
         <Image source={wateringImg} style={styles.image} resizeMode="contain" />
@@ -41,7 +43,9 @@ export function Welcome() {
           activeOpacity={0.7}
           onPress={handleStart}
         >
-          <Feather name="chevron-right" style={styles.buttonIcon} />
+          <Text>
+            <Feather name="chevron-right" style={styles.buttonIcon} />
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -51,37 +55,33 @@ export function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: "center",
+    justifyContent: "space-around",
   },
-
   wrapper: {
     flex: 1,
     alignItems: "center",
     justifyContent: "space-around",
     paddingHorizontal: 20,
   },
-
   title: {
     fontSize: 28,
-    fontWeight: "bold",
     textAlign: "center",
     color: colors.heading,
     marginTop: 38,
     fontFamily: fonts.heading,
     lineHeight: 34,
   },
-
-  image: {
-    height: Dimensions.get("window").width * 0.7,
-  },
-
   subtitle: {
     textAlign: "center",
     fontSize: 18,
+    fontFamily: fonts.text,
     paddingHorizontal: 20,
     color: colors.heading,
-    fontFamily: fonts.text,
   },
-
+  image: {
+    height: Dimensions.get("window").width * 0.7,
+  },
   button: {
     backgroundColor: colors.green,
     justifyContent: "center",
@@ -91,9 +91,8 @@ const styles = StyleSheet.create({
     height: 56,
     width: 56,
   },
-
   buttonIcon: {
-    color: colors.white,
     fontSize: 32,
+    color: colors.white,
   },
 });
